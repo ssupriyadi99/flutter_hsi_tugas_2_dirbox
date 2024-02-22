@@ -251,7 +251,16 @@ class CardFolder extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          image,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              image,
+              const Icon(
+                Icons.more_vert,
+                color: Colors.grey,
+              ),
+            ],
+          ),
           const SizedBox(height: 15),
           Text(
             title,
